@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(/img/brooke-cagle--uHVRvDr7pg-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .subcont {
+        position: absolute;
+        top: 45%;
+        left: 8%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        width: 60%;
+      }
+      /* width: 100%; */
+      #arrow {
+        width: 10px;
+        filter: invert(100%);
+        transform: rotate(60deg);
+        display: block;
+      }
+      .coming {
+        font-size: 12px;
+      }
+      .subscribe {
+        font-size: 12px;
+      }
+      .brand {
+        width: 60%;
+      }
+
+      input {
+        padding: 10px 20px;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: rgb(85, 172, 85);
+        border: 0;
+        outline: none;
+        margin-left: -5px;
+        cursor: pointer;
+      }
+      form {
+        display: flex;
+        margin-top: 30px;
+      }
+      form input {
+        /* tify-content: start; */
+        width: 230px;
+      }
+      span {
+        font-size: 12px;
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcont">
+        <small class="coming">Coming Soon!</small>
+        <h1 class="brand">OUR BRAND NEW WEBSITE IS ON ITS WAY</h1>
+        <p class="subscribe">Subscribe For More Details</p>
+
+        <form name="submit-to-google-sheet">
+          <input type="text" name="text" placeholder="Your Email Id" required />
+          <button>
+            <img src="/img/arrow-pointer-solid.svg" alt="" / id="arrow">
+          </button>
+        </form>
+        <span>Thanks You For Your Subscribing</span>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyvGk2TUf4fIx3C0UhmUrmQ4VnOcw9jdtdlNNo8WrHHGE1lCe3EKatGowUPZOQhmztR/exec";
+    const form = document.forms["submit-to-google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => console.log("Success!", response))
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</html>

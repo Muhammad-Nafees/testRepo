@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.head-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(/gym-acc.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(/gym-acc.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.head-sub {
+  width: 90%;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+.mid {
+}
+.mid ul {
+}
+.mid ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 4px 11px;
+}
+.mid ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.left img {
+  width: 50px;
+  border-radius: 50%;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right input {
+  padding: 10px 10px;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgb(177, 177, 35);
+}
+.section {
+}
+.content2 {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 14%;
+}
+.para {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.para2 {
+  color: crimson;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}

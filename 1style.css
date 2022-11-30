@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: rgb(26, 129, 136);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.sub0 {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  padding-left: 3%;
+  /* color: white; */
+}
+.left ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left ul li {
+  list-style: none;
+  padding: 0px 15px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3%;
+}
+.right input {
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid gray;
+  border-radius: 9px;
+}
+#logo {
+  width: 90px;
+  border-radius: 50px;
+}
+.firstsection {
+  /* height: 100vh; */
+}
+.background {
+  background: rgba(0, 0, 0, 0.75) url(/img/luca-bravo-ESkw2ayO2As-unsplash.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo2 {
+  width: 300px;
+  height: 300px;
+}
+.lefthalf {
+  width: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.righthalf {
+  width: 30%;
+}
+.content {
+  display: inline;
+}

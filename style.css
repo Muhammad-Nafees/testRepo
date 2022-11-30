@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Fira+Sans:ital@0;1&family=Hind+Madurai:wght@700&family=Inspiration&family=Lobster+Two:ital@1&family=Poppins:ital@1&family=Silkscreen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subcont {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.leftpara p {
+  font-size: 12px;
+  color: white;
+}
+.anchor {
+  padding: 0px 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: "Combo", cursive;
+  /* font-family: "Fira Sans", sans-serif; */
+  /* font-family: "Hind Madurai", sans-serifs; */
+  /* font-family: "Inspiration", cursive; */
+  /* font-family: "Lobster Two", cursive; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Silkscreen", cursive; */
+}
+
+/* SECTION2  XXXXXXXXXXXXXXXX */
+
+.container2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  /* width: 95%; */
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 15px; */
+  /* height: 90vh; */
+  padding: 35px 0px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
+.left h1 {
+  font-family: "Inspiration", cursive;
+  /* font-family: "Lobster Two", cursive; */
+}
+.left small {
+  text-align: center;
+}
+.right {
+  font-family: "Hind Madurai", sans-serifs;
+  padding-right: 5%;
+}
+.right ul li:hover {
+  background-color: #368079;
+}
+.right ul {
+  display: flex;
+  /* flex-direction: colu; */
+}
+.right ul li {
+  padding: 0px 10px;
+  list-style: none;
+  transition: 0.3s ease-in;
+}
+.right ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+.left h1 {
+  color: rgb(27, 161, 214);
+  font-size: 2rem;
+}
+/* .right ul {
+  display: flex;
+} */
+.image {
+  border: 2px solid #368079;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 19px;
+}
+.container3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/nathan-dumlao-87r__24oABU-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftimg img {
+  width: 85%;
+  border-radius: 50%;
+}
+.right2 {
+  /* width: 50%; */
+  color: white;
+}
+.right2 .h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.span {
+  font-size: 62px;
+  color: #368079;
+}
+#btn {
+  margin-top: 22px;
+  padding: 7px 22px;
+  color: white;
+  /* background: transparent; */
+  border-radius: 35px;
+  /* transform: rotate(160deg); */
+  /* transform: scale(2); */
+}
+
+.btns {
+  margin-top: 22px;
+  padding: 7px 22px;
+  color: rgb(97, 37, 37);
+  background: transparent;
+  /* border-radius: 35px; */
+  /* transform: scale(2); */
+  /* transform: rotate(160deg); */
+}
+/* .nafi {
+  background-color: #368079;
+}
+.home {
+  background-color: #368079;
+} */

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nafees.css" />
+    <title>Document</title>
+  </head>
+  <body onresize="resixe()">
+    <header>
+      <div class="head-container">
+        <div class="head-sub">
+          <div class="content">
+            <div class="left">
+              <img src="/img/nafeespic.jpg" alt="" />
+            </div>
+            <div class="mid">
+              <nav>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Services</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="right">
+              <input placeholder="Search" type="text" id="input" />
+              <button id="alert" class="btn" type="button">Read</button>
+            </div>
+          </div>
+        </div>
+
+        <section> 
+          <div class="section">
+            <div class="sec-2">
+              <div class="content2">
+                <p class="para">Hopestake Is your future <br>  <p class="para2">With Nafees</p>   </br></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+
+    <script>
+
+function  resixe(){
+
+   console.clear()
+
+
+
+   var iheight=window.innerHeight;
+   console.log("Inner Height :"+iheight);
+   
+   
+   var iheight=window.outerHeight;
+   console.log("Outer Height :"+iheight);
+
+
+   var iheight=window.innerWidth;
+   console.log("Inner Width :"+iheight);
+   
+   
+   var iheight=window.outerHeight;
+   console.log("Outer Width :"+iheight);
+}
+
+   var doc= document.getElementById("alert");
+     doc.onclick =()=>{
+       alert("Chutiye Click Kiu Kia")
+      };
+      
+      
+      
+      
+      var set=setInterval(animn,3000);
+      var a =0;
+      function animn(){
+        a=a+100;
+
+if(a==400){
+clearInterval(set)
+}
+else{
+  var target=document.getElementById("alert");
+  target.style.width= a+'px'
+}
+function mobile(){
+  this.model ='3310';
+  this.price =function(){
+   console.log(this.model+" Price Are 3000")
+  }
+}
+
+var sam= new mobile();
+sam.price()
+
+
+
+// var clear= clearTimeout(anima,2000);
+
+//  function anima(){
+//   var tar=document.getElementById("alert");
+// tar.style.width="300px";
+//  }
+
+     }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        display: flex;
+      }
+      .nav-list {
+        /* display: flex; */
+        width: 50%;
+        /* background-color: rgb(0, 0, 0); */
+        display: flex;
+        align-items: center;
+      }
+      .nav-list li {
+        list-style: none;
+        padding: 5px 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .nav-list li a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease-in-out;
+      }
+      .nav-list li a:hover {
+        color: grey;
+      }
+      .rightnav {
+        width: 50%;
+        /* background-color: purple; */
+        text-align: right;
+      }
+      .logo img {
+        width: 80px;
+        border-radius: 50%;
+        border: 3px solid white;
+      }
+      #search {
+        padding: 2px 6px;
+        font-size: 17px;
+        border: 2px solid white;
+        border-radius: 5px;
+      }
+      .background {
+        background: rgba(0, 0, 0, 0.7)
+          url(/img/siora-photography-RfpViEFmrxA-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: darken;
+      }
+      .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .logo {
+        width: 400px;
+      }
+      .firstsection {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar background">
+      <ul class="nav-list">
+        <div class="logo"><img src="/img/cmpu.jpg" alt="" /></div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="rightnav">
+        <input type="search" name="search" id="search" />
+        <button class="btn btn-sm">Button</button>
+      </div>
+    </nav>
+
+    <section class="firstsection background">
+      <div class="box-main">
+        <div class="firsthalf">
+          <p>The Fture is Hopestake</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            totam temporibus sed!
+          </p>
+
+          <div class="buttons">
+            <button class="btn">Subscribe</button>
+            <button class="btn">Watch More</button>
+          </div>
+        </div>
+
+        <div class="secondhalf">
+          <img class="logo" src="/img/laptop2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
